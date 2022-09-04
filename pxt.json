@@ -3,7 +3,6 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "microphone": "*",
         "Devices": "pkg:Devices.json",
         "bluetooth": "*",
         "devices": "*"
@@ -24,7 +23,7 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj",
+    "preferredEditor": "tsprj",
     "yotta": {
         "config": {
             "microbit-dal": {
