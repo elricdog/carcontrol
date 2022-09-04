@@ -1,0 +1,39 @@
+{
+    "name": "CarControl",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "microphone": "*",
+        "Devices": "pkg:Devices.json",
+        "bluetooth": "*",
+        "devices": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "Devices.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "5.0.12",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0,
+                    "security_level": null
+                }
+            }
+        }
+    }
+}
