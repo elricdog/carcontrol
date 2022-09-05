@@ -8,7 +8,7 @@ bluetooth.onBluetoothDisconnected(function () {
     basic.showIcon(IconNames.No)
 })
 devices.onGamepadButton(MesDpadButtonInfo.BDown, function () {
-    music.playSoundEffect(music.builtinSoundEffect(soundExpression.giggle), SoundExpressionPlayMode.InBackground)
+    music.playSoundEffect(music.builtinSoundEffect(soundExpression.twinkle), SoundExpressionPlayMode.InBackground)
 })
 input.onButtonPressed(Button.A, function () {
     pins.digitalWritePin(DigitalPin.P1, 1)
@@ -30,10 +30,10 @@ input.onButtonPressed(Button.B, function () {
 })
 devices.onGamepadButton(MesDpadButtonInfo.ADown, function () {
     if (Light == 0) {
-        pins.digitalWritePin(DigitalPin.P2, 1)
+        pins.digitalWritePin(DigitalPin.P5, 1)
         Light = 1
     } else {
-        pins.digitalWritePin(DigitalPin.P2, 0)
+        pins.digitalWritePin(DigitalPin.P5, 0)
         Light = 0
     }
 })
@@ -43,4 +43,4 @@ devices.onGamepadButton(MesDpadButtonInfo._1Down, function () {
 })
 let Light = 0
 basic.showIcon(IconNames.No)
-music.playSoundEffect(music.builtinSoundEffect(soundExpression.spring), SoundExpressionPlayMode.InBackground)
+music.playSoundEffect(music.builtinSoundEffect(soundExpression.slide), SoundExpressionPlayMode.InBackground)
