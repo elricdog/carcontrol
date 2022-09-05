@@ -11,11 +11,11 @@ devices.onGamepadButton(MesDpadButtonInfo.BDown, function () {
     music.playSoundEffect(music.builtinSoundEffect(soundExpression.twinkle), SoundExpressionPlayMode.InBackground)
 })
 input.onButtonPressed(Button.A, function () {
-    pins.digitalWritePin(DigitalPin.P1, 1)
+    pins.digitalWritePin(DigitalPin.P1, 0)
     basic.showArrow(ArrowNames.North)
 })
 devices.onGamepadButton(MesDpadButtonInfo._2Down, function () {
-    pins.digitalWritePin(DigitalPin.P1, 0)
+    pins.digitalWritePin(DigitalPin.P1, 1)
     basic.showIcon(IconNames.No)
 })
 devices.onGamepadButton(MesDpadButtonInfo.DDown, function () {
@@ -25,7 +25,7 @@ devices.onGamepadButton(MesDpadButtonInfo.CDown, function () {
     music.playSoundEffect(music.builtinSoundEffect(soundExpression.spring), SoundExpressionPlayMode.InBackground)
 })
 input.onButtonPressed(Button.B, function () {
-    pins.digitalWritePin(DigitalPin.P1, 0)
+    pins.digitalWritePin(DigitalPin.P1, 1)
     basic.showIcon(IconNames.No)
 })
 devices.onGamepadButton(MesDpadButtonInfo.ADown, function () {
@@ -38,9 +38,14 @@ devices.onGamepadButton(MesDpadButtonInfo.ADown, function () {
     }
 })
 devices.onGamepadButton(MesDpadButtonInfo._1Down, function () {
-    pins.digitalWritePin(DigitalPin.P1, 1)
+    pins.digitalWritePin(DigitalPin.P1, 0)
     basic.showArrow(ArrowNames.North)
 })
 let Light = 0
 basic.showIcon(IconNames.No)
 music.playSoundEffect(music.builtinSoundEffect(soundExpression.slide), SoundExpressionPlayMode.InBackground)
+pins.digitalWritePin(DigitalPin.P1, 1)
+pins.digitalWritePin(DigitalPin.P2, 1)
+pins.digitalWritePin(DigitalPin.P3, 1)
+pins.digitalWritePin(DigitalPin.P4, 1)
+pins.digitalWritePin(DigitalPin.P5, 0)
